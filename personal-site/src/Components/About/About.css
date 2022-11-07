@@ -1,0 +1,15 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: black;
+  min-height: 50vh;
+  /* padding: 60px 25px; */
+  /* border-top: 40px solid yellow; */
+}
+
+.about .left {
+  background-color: white;
+  border-right: 40px solid blue;
+  border-top: 40px solid blue;
+  border-bottom: 40px solid blue;
+}

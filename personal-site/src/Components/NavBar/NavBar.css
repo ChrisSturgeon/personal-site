@@ -1,5 +1,17 @@
 .top-nav {
   background-color: rgb(170, 221, 214);
   position: fixed;
+  box-sizing: border-box;
+  min-height: 40px;
+  display: flex;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  overflow: hidden;
+}
+
+.top-nav ul {
+  display: flex;
+  gap: 1em;
 }

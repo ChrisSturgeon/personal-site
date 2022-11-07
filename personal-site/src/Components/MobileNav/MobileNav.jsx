@@ -1,60 +1,50 @@
-import React, { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import React from 'react';
 import { motion } from 'framer-motion';
-import './NavBar.css';
-
+import './MobileNav.css';
 import ScrollButtons from '../ScrollButtons/ScrollButtons';
 
-const dropIn = {
+const slideOut = {
   hidden: {
-    y: '-10vh',
+    x: '200vw',
     opacity: 0,
   },
   visible: {
-    y: '0',
+    x: '0',
     opacity: 1,
     transition: {
       duration: 0.5,
     },
   },
   exit: {
-    y: '-10vh',
+    x: '200vw',
     opacity: 0,
     transition: {
       duration: 0.5,
     },
   },
 };
-
-export default function NavBar({
-  isMobile,
-  mobileNav,
-  toggleMobileNav,
+export default function MobileNav({
   handleScroll,
   aboutRef,
   projectsRef,
   contactRef,
 }) {
   return (
-    <motion.nav
-      variants={dropIn}
+    <motion.div
+      variants={slideOut}
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="top-nav"
+      className="mobile-nav"
     >
-      <h1>Chris Sturgeon</h1>
-
-      {!isMobile && (
+      <div className="mobile-scroll-buttons">
         <ScrollButtons
           handleScroll={handleScroll}
           aboutRef={aboutRef}
           projectsRef={projectsRef}
           contactRef={contactRef}
         />
-      )}
-
-      {isMobile && <button onClick={toggleMobileNav}>Expand</button>}
-    </motion.nav>
+      </div>
+    </motion.div>
   );
 }

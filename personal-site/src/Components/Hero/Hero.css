@@ -2,5 +2,39 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh + 25px);
+  background-color: black;
+}
+
+.hero .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1em;
+}
+
+.hero .left h2 {
+  font-size: 10em;
+  overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero .left h2 {
+    font-size: 7em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .hero .left h2 {
+    font-size: 5rem;
+    padding: 0;
+  }
 }
