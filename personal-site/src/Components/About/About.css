@@ -1,15 +1,62 @@
 .about {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: minmax(500px, auto) auto;
   background-color: black;
-  min-height: 50vh;
-  /* padding: 60px 25px; */
-  /* border-top: 40px solid yellow; */
+  border-bottom: 40px solid black;
 }
 
 .about .left {
   background-color: white;
-  border-right: 40px solid blue;
-  border-top: 40px solid blue;
-  border-bottom: 40px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 2em;
+  width: 100%;
+}
+
+.about .right {
+  background-color: black;
+  color: white;
+  border-left: 40px solid blue;
+  padding: 2em;
+}
+
+.about .bio {
+  max-width: 800px;
+  line-height: 2;
+}
+
+.about .skills li {
+  color: yellow;
+  font-weight: 700;
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1000x) {
+  .about .right {
+    padding-right: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .about .left {
+    /* min-height: 400px; */
+    background-size: cover;
+    padding-top: 1em;
+  }
+
+  .about .left img {
+    max-width: 100%;
+  }
+
+  .about .right {
+    border-left: 20px solid blue;
+  }
 }

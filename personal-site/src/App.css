@@ -137,6 +137,20 @@ table {
 
 @font-face {
   font-family: 'Outfit';
+  src: url('./fonts/Outfit-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./fonts/Outfit-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
   src: url('./fonts/Outfit-Bold.ttf');
   font-weight: 700;
   font-style: normal;
@@ -152,4 +166,22 @@ table {
 h2 {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
   font-weight: 700;
+}
+
+h3,
+button,
+a {
+  font-family: 'Outfit', Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-family: 'Outfit', Helvetica, Arial, sans-serif;
+}
+
+li {
+  font-family: 'Outfit', Helvetica, Arial, sans-serif;
+}
+
+a:visited {
+  color: inherit;
 }

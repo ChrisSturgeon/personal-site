@@ -28,6 +28,12 @@ function App() {
       setMobileNav(false);
     }
     ref.current?.scrollIntoView({ behavior: 'smooth' });
+    if (isMobile) {
+      setTimeout(() => {
+        setShowNav(false);
+        console.log('stopped');
+      }, 800);
+    }
   };
 
   // Locks body scroll when mobile nav is open
@@ -92,7 +98,13 @@ function App() {
         )}
       </AnimatePresence>
 
-      <Hero isMobile={isMobile} />
+      <Hero
+        isMobile={isMobile}
+        handleScroll={handleScroll}
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+      />
       <About aboutRef={aboutRef} />
       <Projects projectsRef={projectsRef} />
       <Contact contactRef={contactRef} />

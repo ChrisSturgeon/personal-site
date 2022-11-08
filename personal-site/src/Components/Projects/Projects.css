@@ -1,5 +1,14 @@
 .projects {
-  background-color: pink;
-  min-height: 100vh;
-  padding: 60px 25px;
+  padding: 2em 3em;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  text-decoration: underline 5px solid red;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects {
+    padding: 1em;
+  }
 }

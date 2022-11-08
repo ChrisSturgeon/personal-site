@@ -43,7 +43,7 @@ export default function NavBar({
       exit="exit"
       className="top-nav"
     >
-      <h1>Chris Sturgeon</h1>
+      <h2>Chris Sturgeon</h2>
 
       {!isMobile && (
         <ScrollButtons
