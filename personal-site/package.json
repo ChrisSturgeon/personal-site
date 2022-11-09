@@ -26,7 +26,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "http://ChrisSturgeon.github.io/personal-site",
+  "homepage": "www.chrissturgeon.co.uk",
   "browserslist": {
     "production": [
       ">0.2%",
