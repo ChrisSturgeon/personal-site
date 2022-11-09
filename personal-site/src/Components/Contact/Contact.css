@@ -1,5 +1,37 @@
 .contact {
-  background-color: rgb(179, 231, 179);
+  background-color: black;
   min-height: 200px;
-  padding: 25px;
+  padding: 3em;
+  border-right: 50px solid blue;
+  color: white;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  color: white;
+  text-decoration: underline 5px solid red;
+}
+
+.contact .contact-types {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.2rem;
+}
+
+.contact-types a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-types a:hover {
+  color: yellow;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    margin-top: 5em;
+    border-right: 20px solid blue;
+  }
 }

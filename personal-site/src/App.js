@@ -14,6 +14,7 @@ function App() {
   const [isMobile, setIsMobile] = useState(getIsMobile());
   const [showNav, setShowNav] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
+  const [showArrow, setShowArrow] = useState(false);
   const { scrollY } = useScroll();
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -36,12 +37,21 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    const showArrow = () => {
+      if (isMobile) {
+        setShowArrow(true);
+      }
+    };
+    setTimeout(showArrow, 1000);
+  }, [isMobile]);
+
   // Locks body scroll when mobile nav is open
   useEffect(() => {
     if (mobileNav) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflowY = 'hidden';
     } else {
-      document.body.style.overflow = 'scroll';
+      document.body.style.overflowY = 'auto';
     }
   }, [mobileNav]);
 
@@ -67,6 +77,7 @@ function App() {
       } else {
         setShowNav(false);
       }
+      setShowArrow(false);
     });
   }, [isMobile, scrollY]);
 
@@ -86,7 +97,6 @@ function App() {
           />
         )}
       </AnimatePresence>
-
       <AnimatePresence>
         {mobileNav && (
           <MobileNav
@@ -97,9 +107,9 @@ function App() {
           />
         )}
       </AnimatePresence>
-
       <Hero
         isMobile={isMobile}
+        showArrow={showArrow}
         handleScroll={handleScroll}
         aboutRef={aboutRef}
         projectsRef={projectsRef}

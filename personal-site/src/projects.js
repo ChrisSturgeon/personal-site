@@ -1,7 +1,7 @@
-import RedoneIt from './imgs/RedoneitHomepage.jpg';
-import ReactRecords from './imgs/ReactRecords.jpg';
-import BattleShips from './imgs/BattleShips.jpg';
-import WheresFry from './imgs/WheresFry.jpg';
+import RedoneIt from './imgs/RedoneitHomepage.png';
+import ReactRecords from './imgs/ReactRecords.png';
+import BattleShips from './imgs/BattleShips.png';
+import WheresFry from './imgs/WheresFry.png';
 export const projectData = [
   {
     name: 'RedoneIt',

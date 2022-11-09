@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: minmax(500px, auto) auto;
   background-color: black;
-  border-bottom: 40px solid black;
+  border-bottom: 50px solid black;
+  border-top: 50px solid black;
 }
 
 .about .left {

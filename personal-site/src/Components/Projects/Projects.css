@@ -1,5 +1,5 @@
 .projects {
-  padding: 2em 3em;
+  padding: calc(3em + 40px) 3em;
 }
 
 .projects h2 {
