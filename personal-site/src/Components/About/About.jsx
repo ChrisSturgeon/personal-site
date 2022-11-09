@@ -1,15 +1,11 @@
 import './About.css';
 import React from 'react';
-
 import headShot from '../../imgs/headshot-modified.png';
 
 export default function About({ aboutRef }) {
   return (
     <div ref={aboutRef} className="about">
-      <div
-        className="left"
-        // style={{ backgroundImage: `url(${headShot})`, backgroundSize: 'cover' }}
-      >
+      <div className="left">
         <img
           src={headShot}
           alt="Chris Sturgeon headshot"

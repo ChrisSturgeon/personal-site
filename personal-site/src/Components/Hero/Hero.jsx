@@ -1,7 +1,7 @@
-import React from 'react';
-import HeroNav from '../HeroNav/HeroNav';
 import './Hero.css';
+import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import HeroNav from '../HeroNav/HeroNav';
 
 export default function Hero({
   isMobile,

@@ -1,6 +1,8 @@
 import './App.css';
 import { useState, useEffect, useRef } from 'react';
 import { useScroll, AnimatePresence } from 'framer-motion';
+
+// Component Imports
 import Hero from './Components/Hero/Hero';
 import NavBar from './Components/NavBar/NavBar';
 import Projects from './Components/Projects/Projects';
@@ -8,6 +10,7 @@ import Contact from './Components/Contact/Contact';
 import About from './Components/About/About';
 import MobileNav from './Components/MobileNav/MobileNav';
 
+// Returns true if user's screen width is less than 768px
 const getIsMobile = () => window.innerWidth <= 768;
 
 function App() {
@@ -15,15 +18,17 @@ function App() {
   const [showNav, setShowNav] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
   const [showArrow, setShowArrow] = useState(false);
-  const { scrollY } = useScroll();
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const { scrollY } = useScroll();
 
+  // Toggles mobile nav menu open/close
   const toggleMobileNav = () => {
     setMobileNav(!mobileNav);
   };
 
+  // Scrolls tp given section refgerence, closing top navbar after if on mobile
   const handleScroll = (ref) => {
     if (mobileNav) {
       setMobileNav(false);
@@ -37,6 +42,7 @@ function App() {
     }
   };
 
+  // Displays bouncing down-arrow on mobile after 1 second of app mount
   useEffect(() => {
     const showArrow = () => {
       if (isMobile) {
@@ -55,6 +61,7 @@ function App() {
     }
   }, [mobileNav]);
 
+  // Runs on user screen re-size to initiate mobile layout if neccessary
   useEffect(() => {
     const onResize = () => {
       setIsMobile(getIsMobile());
@@ -67,6 +74,8 @@ function App() {
     };
   }, []);
 
+  // Tracks scroll location to display top nav on desktop only
+  // after user has scrolled past hero, or has scrolled at all on mobile
   useEffect(() => {
     return scrollY.onChange((latest) => {
       if (

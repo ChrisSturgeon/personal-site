@@ -1,22 +1,7 @@
-import React from 'react';
 import './Projects.css';
-import { motion, Variants } from 'framer-motion';
-import Card from './Card/Card';
+import React from 'react';
 import { projectData } from '../../projects';
-
-// const cardVariants = {
-//   offscreen: {
-//     y: 300,
-//   },
-//   onscreen: {
-//     y: 50,
-//     transition: {
-//       type: 'spring',
-//       bounce: 0.4,
-//       duration: 0.8,
-//     },
-//   },
-// };
+import Card from './Card/Card';
 
 export default function Projects({ projectsRef }) {
   return (

@@ -3,10 +3,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 1em; */
   align-items: center;
   border-left: 40px solid red;
-  /* border-bottom: 40px solid red; */
 }
 
 .hero-nav button {

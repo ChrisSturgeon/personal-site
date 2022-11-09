@@ -1,6 +1,6 @@
+import './MobileNav.css';
 import React from 'react';
 import { motion } from 'framer-motion';
-import './MobileNav.css';
 import ScrollButtons from '../ScrollButtons/ScrollButtons';
 
 const slideOut = {

@@ -2,6 +2,7 @@ import RedoneIt from './imgs/RedoneitHomepage.png';
 import ReactRecords from './imgs/ReactRecords.png';
 import BattleShips from './imgs/BattleShips.png';
 import WheresFry from './imgs/WheresFry.png';
+
 export const projectData = [
   {
     name: 'RedoneIt',

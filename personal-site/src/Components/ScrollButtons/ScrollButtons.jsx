@@ -1,5 +1,5 @@
-import React from 'react';
 import './ScrollButtons.css';
+import React from 'react';
 
 export default function ScrollButtons({
   handleScroll,
