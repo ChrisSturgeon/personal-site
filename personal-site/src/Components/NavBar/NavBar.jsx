@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import React from 'react';
+
 import { motion } from 'framer-motion';
 import './NavBar.css';
 
@@ -43,7 +43,13 @@ export default function NavBar({
       exit="exit"
       className="top-nav"
     >
-      <h2>Chris Sturgeon</h2>
+      <h2
+        onClick={() => {
+          window.scroll({ top: 0, behavior: 'smooth' });
+        }}
+      >
+        Chris Sturgeon
+      </h2>
 
       {!isMobile && (
         <ScrollButtons
@@ -54,7 +60,15 @@ export default function NavBar({
         />
       )}
 
-      {isMobile && <button onClick={toggleMobileNav}>Expand</button>}
+      {isMobile && (
+        <button onClick={toggleMobileNav}>
+          {mobileNav ? (
+            <i className="fa-solid fa-xmark"></i>
+          ) : (
+            <i className="fa-sharp fa-solid fa-bars"></i>
+          )}
+        </button>
+      )}
     </motion.nav>
   );
 }

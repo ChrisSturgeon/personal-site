@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.top-nav button:hover {
+  color: yellow;
+}
+
 .top-nav ul {
   display: flex;
   gap: 1em;

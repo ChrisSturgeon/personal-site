@@ -11,4 +11,8 @@
   .projects {
     padding: 1em;
   }
+
+  .projects h2 {
+    margin-top: 0.25em;
+  }
 }

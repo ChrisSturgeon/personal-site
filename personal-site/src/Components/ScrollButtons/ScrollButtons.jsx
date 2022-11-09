@@ -1,4 +1,5 @@
 import React from 'react';
+import './ScrollButtons.css';
 
 export default function ScrollButtons({
   handleScroll,
@@ -9,7 +10,9 @@ export default function ScrollButtons({
   return (
     <ul>
       <li>
-        <button onClick={() => handleScroll(aboutRef)}>About</button>
+        <button className="about-btn" onClick={() => handleScroll(aboutRef)}>
+          About
+        </button>
       </li>
       <li>
         <button onClick={() => handleScroll(projectsRef)}>Projects</button>

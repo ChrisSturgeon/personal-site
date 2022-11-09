@@ -40,28 +40,34 @@ export default function Card({ info }) {
         <div className="right">
           <p> {info.about}</p>
           <div className="links">
-            <motion.a
-              href={info.live}
-              target="_blank"
-              rel="noreferrer"
+            <motion.li
               whileHover={{
                 position: 'relative',
                 scale: 1.2,
               }}
             >
-              View live
-            </motion.a>
-            <motion.a
-              href={info.repo}
-              target="_blank"
-              rel="noreferrer"
+              <motion.a href={info.live} target="_blank" rel="noreferrer">
+                View Live
+              </motion.a>
+            </motion.li>
+            <motion.li
               whileHover={{
                 position: 'relative',
                 scale: 1.2,
               }}
             >
-              View Code
-            </motion.a>
+              <motion.a
+                href={info.repo}
+                target="_blank"
+                rel="noreferrer"
+                whileHover={{
+                  position: 'relative',
+                  scale: 1.2,
+                }}
+              >
+                View Code
+              </motion.a>
+            </motion.li>
           </div>
         </div>
       </div>
