@@ -31,8 +31,11 @@ export default function Hero({
               exit={{ opacity: 0 }}
               className="down-arrow"
               onClick={() => {
-                // Scrolls down page height on click
-                window.scroll({ top: window.innerHeight, behavior: 'smooth' });
+                // Scrolls down hero height on click
+                window.scroll({
+                  top: document.querySelector('.hero').offsetHeight,
+                  behavior: 'smooth',
+                });
               }}
             >
               &#8595;
