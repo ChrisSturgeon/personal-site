@@ -14,7 +14,7 @@
 }
 
 .top-nav h2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .top-nav button {
@@ -32,4 +32,8 @@
 .top-nav ul {
   display: flex;
   gap: 1em;
+}
+
+.top-nav i {
+  font-size: 1.8rem;
 }

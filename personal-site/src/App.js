@@ -37,7 +37,6 @@ function App() {
     if (isMobile) {
       setTimeout(() => {
         setShowNav(false);
-        console.log('stopped');
       }, 800);
     }
   };

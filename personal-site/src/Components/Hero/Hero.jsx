@@ -30,6 +30,10 @@ export default function Hero({
               }}
               exit={{ opacity: 0 }}
               className="down-arrow"
+              onClick={() => {
+                // Scrolls down page height on click
+                window.scroll({ top: window.innerHeight, behavior: 'smooth' });
+              }}
             >
               &#8595;
             </motion.div>
