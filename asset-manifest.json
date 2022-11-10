@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/personal-site/static/css/main.1b484734.css",
-    "main.js": "/personal-site/static/js/main.fd630301.js",
-    "static/js/787.3ba5e41c.chunk.js": "/personal-site/static/js/787.3ba5e41c.chunk.js",
-    "static/media/WheresFry.png": "/personal-site/static/media/WheresFry.41c95c120f7dae15be35.png",
-    "static/media/BattleShips.png": "/personal-site/static/media/BattleShips.58698a8b33e622129e14.png",
-    "static/media/ReactRecords.png": "/personal-site/static/media/ReactRecords.3754fb26cb089418bd39.png",
-    "static/media/headshot-modified.png": "/personal-site/static/media/headshot-modified.61a63fde20288eac8912.png",
-    "static/media/RedoneitHomepage.png": "/personal-site/static/media/RedoneitHomepage.63466952595eaf1b7d29.png",
-    "static/media/Outfit-SemiBold.ttf": "/personal-site/static/media/Outfit-SemiBold.59efc76d343a6215384a.ttf",
-    "static/media/Outfit-Regular.ttf": "/personal-site/static/media/Outfit-Regular.5a00cf1a6ae3ea70fb96.ttf",
-    "static/media/Outfit-ExtraBold.ttf": "/personal-site/static/media/Outfit-ExtraBold.4def75c8bb160b4f3cb8.ttf",
-    "static/media/Outfit-Bold.ttf": "/personal-site/static/media/Outfit-Bold.958af3eb04f5d52fff1d.ttf",
-    "static/media/Outfit-Medium.ttf": "/personal-site/static/media/Outfit-Medium.1a96ec21fd3e057ba010.ttf",
-    "index.html": "/personal-site/index.html",
-    "main.1b484734.css.map": "/personal-site/static/css/main.1b484734.css.map",
-    "main.fd630301.js.map": "/personal-site/static/js/main.fd630301.js.map",
-    "787.3ba5e41c.chunk.js.map": "/personal-site/static/js/787.3ba5e41c.chunk.js.map"
+    "main.css": "/static/css/main.c88b954a.css",
+    "main.js": "/static/js/main.a98c6468.js",
+    "static/js/787.3ba5e41c.chunk.js": "/static/js/787.3ba5e41c.chunk.js",
+    "static/media/WheresFry.png": "/static/media/WheresFry.3554a1bdebc0471373c0.png",
+    "static/media/BattleShips.png": "/static/media/BattleShips.73fe836821cec029f297.png",
+    "static/media/ReactRecords.png": "/static/media/ReactRecords.3be635d6f20c263b78b3.png",
+    "static/media/headshot-modified.png": "/static/media/headshot-modified.903fa0cf83e26a7dc3e9.png",
+    "static/media/RedoneitHomepage.png": "/static/media/RedoneitHomepage.8b9914241638418ec6e3.png",
+    "static/media/Outfit-SemiBold.ttf": "/static/media/Outfit-SemiBold.59efc76d343a6215384a.ttf",
+    "static/media/Outfit-Regular.ttf": "/static/media/Outfit-Regular.5a00cf1a6ae3ea70fb96.ttf",
+    "static/media/Outfit-ExtraBold.ttf": "/static/media/Outfit-ExtraBold.4def75c8bb160b4f3cb8.ttf",
+    "static/media/Outfit-Bold.ttf": "/static/media/Outfit-Bold.958af3eb04f5d52fff1d.ttf",
+    "static/media/Outfit-Medium.ttf": "/static/media/Outfit-Medium.1a96ec21fd3e057ba010.ttf",
+    "index.html": "/index.html",
+    "main.c88b954a.css.map": "/static/css/main.c88b954a.css.map",
+    "main.a98c6468.js.map": "/static/js/main.a98c6468.js.map",
+    "787.3ba5e41c.chunk.js.map": "/static/js/787.3ba5e41c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b484734.css",
-    "static/js/main.fd630301.js"
+    "static/css/main.c88b954a.css",
+    "static/js/main.a98c6468.js"
   ]
 }
