@@ -1,6 +1,6 @@
 import './About.css';
 import React from 'react';
-import headShot from '../../imgs/headshot-modified.png';
+import headShot from '../../../../imgs/headshot-modified.png';
 
 export default function About({ aboutRef }) {
   return (

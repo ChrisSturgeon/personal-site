@@ -4,14 +4,12 @@ import { useScroll, AnimatePresence } from 'framer-motion';
 import { Routes, Route } from 'react-router-dom';
 
 // Component Imports
-import Hero from '../../Components/Hero/Hero';
-import NavBar from '../../Components/NavBar/NavBar';
-import Projects from '../../Components/Projects/Projects';
-import Contact from '../../Components/Contact/Contact';
-import About from '../../Components/About/About';
-import MobileNav from '../../Components/MobileNav/MobileNav';
-
-// import Blog from './Sections/Blog/BlogIndex';
+import Hero from './Components/Hero/Hero';
+import NavBar from './Components/NavBar/NavBar';
+import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact';
+import About from './Components/About/About';
+import MobileNav from './Components/MobileNav/MobileNav';
 
 // Returns true if user's screen width is less than 768px
 const getIsMobile = () => window.innerWidth <= 768;

@@ -1,6 +1,6 @@
 import './Projects.css';
 import React from 'react';
-import { projectData } from '../../projects';
+import { projectData } from '../../../../projects';
 import Card from './Card/Card';
 
 export default function Projects({ projectsRef }) {
