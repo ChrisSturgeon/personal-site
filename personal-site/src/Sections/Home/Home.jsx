@@ -1,23 +1,22 @@
-import './App.css';
+import React from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { useScroll, AnimatePresence } from 'framer-motion';
 import { Routes, Route } from 'react-router-dom';
 
 // Component Imports
-import Hero from './Components/Hero/Hero';
-import NavBar from './Components/NavBar/NavBar';
-import Projects from './Components/Projects/Projects';
-import Contact from './Components/Contact/Contact';
-import About from './Components/About/About';
-import MobileNav from './Components/MobileNav/MobileNav';
+import Hero from '../../Components/Hero/Hero';
+import NavBar from '../../Components/NavBar/NavBar';
+import Projects from '../../Components/Projects/Projects';
+import Contact from '../../Components/Contact/Contact';
+import About from '../../Components/About/About';
+import MobileNav from '../../Components/MobileNav/MobileNav';
 
-import Home from './Sections/Home/Home';
-import Blog from './Sections/Blog/BlogIndex';
+// import Blog from './Sections/Blog/BlogIndex';
 
 // Returns true if user's screen width is less than 768px
 const getIsMobile = () => window.innerWidth <= 768;
 
-function App() {
+export default function Home() {
   const [isMobile, setIsMobile] = useState(getIsMobile());
   const [showNav, setShowNav] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
@@ -94,12 +93,8 @@ function App() {
   }, [isMobile, scrollY]);
 
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog/" element={<Blog />} />
-      </Routes>
-      {/* <AnimatePresence>
+    <div className="home">
+      <AnimatePresence>
         {showNav && (
           <NavBar
             isMobile={isMobile}
@@ -133,9 +128,7 @@ function App() {
       />
       <About aboutRef={aboutRef} />
       <Projects projectsRef={projectsRef} />
-      <Contact contactRef={contactRef} /> */}
+      <Contact contactRef={contactRef} />
     </div>
   );
 }
-
-export default App;
