@@ -37,16 +37,9 @@ export default function BlogIndex() {
       <Outlet />
 
       <Routes>
-        <Route path="/" element={<Home isMobile={isMobile} />} />
+        <Route index element={<Home isMobile={isMobile} />} />
         <Route path="/posts/all" element={<Summaries />} />
         <Route path="/posts/:postId" element={<Post />} />
-      </Routes>
-
-      <Routes>
-        {/* <Route path="/blog" element={<Home isMobile={isMobile} />} /> */}
-        {/* <Route path="/blog/posts/all" element={<Summaries />} />
-        <Route path="/blog/posts/:postId" element={<Post />} /> */}
-        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </div>
   );

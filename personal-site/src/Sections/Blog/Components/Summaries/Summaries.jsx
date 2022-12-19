@@ -5,10 +5,6 @@ import './Summaries.css';
 export default function Summaries(props) {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    console.log('Summaries rendered');
-  }, []);
-
   // Fetches posts summary on mount
   useEffect(() => {
     const getPosts = async () => {

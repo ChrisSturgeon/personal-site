@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function MobileNavbar({ toggleNav }) {
   return (
     <nav className="mobile-navbar">
-      <Link to="/">Chris Sturgeon</Link>
+      <Link to="/blog">Chris Sturgeon</Link>
       <button onClick={() => toggleNav()}>Open</button>
     </nav>
   );
