@@ -1,0 +1,16 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(191, 207, 97);
+  padding: 1em;
+}
+
+.comment-details {
+  margin-bottom: 0.75em;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.comment-details .username {
+  /* font-weight: 400; */
+}

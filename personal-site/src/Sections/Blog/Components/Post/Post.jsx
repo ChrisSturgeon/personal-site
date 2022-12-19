@@ -2,6 +2,7 @@ import { format, parseISO } from 'date-fns';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './Post.css';
+import Comments from '../Comments/Comments';
 
 export default function Post(props) {
   const { postId } = useParams();
@@ -36,6 +37,7 @@ export default function Post(props) {
           <h1>{post.title}</h1>
           <p dangerouslySetInnerHTML={{ __html: post.content }}></p>
         </div>
+        <Comments />
       </main>
     );
   }

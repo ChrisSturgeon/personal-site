@@ -185,6 +185,7 @@ h2,
 h3,
 a,
 p,
-button {
+button,
+span {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
 }

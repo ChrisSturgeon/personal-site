@@ -1,0 +1,27 @@
+.comments-wrapper {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: clamp(200px, 100%, 70em);
+  padding: 2em;
+  background-color: blanchedalmond;
+}
+
+.comments-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.comments-wrapper h2 {
+  font-size: 1.5rem;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .comments-wrapper {
+    padding: 1em 1em;
+  }
+}

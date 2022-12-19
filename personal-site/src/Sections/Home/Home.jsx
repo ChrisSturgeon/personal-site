@@ -1,7 +1,6 @@
 import React from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { useScroll, AnimatePresence } from 'framer-motion';
-import { Routes, Route } from 'react-router-dom';
 
 // Component Imports
 import Hero from './Components/Hero/Hero';

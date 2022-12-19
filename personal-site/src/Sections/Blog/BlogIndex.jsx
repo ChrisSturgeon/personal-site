@@ -40,6 +40,7 @@ export default function BlogIndex() {
         <Route index element={<Home isMobile={isMobile} />} />
         <Route path="/posts/all" element={<Summaries />} />
         <Route path="/posts/:postId" element={<Post />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
