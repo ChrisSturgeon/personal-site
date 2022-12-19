@@ -1,0 +1,28 @@
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.comment-form h3 {
+  font-size: 1.2rem;
+}
+
+.comment-form label {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 0.5em;
+  font-size: 1.2rem;
+}
+
+.comment-form textarea {
+  min-height: 100px;
+  max-width: 100%;
+  margin-bottom: 0.5em;
+}

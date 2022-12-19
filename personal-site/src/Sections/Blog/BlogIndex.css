@@ -186,6 +186,9 @@ h3,
 a,
 p,
 button,
-span {
+span,
+label,
+input,
+textarea {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
 }
