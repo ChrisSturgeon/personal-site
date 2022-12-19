@@ -1,6 +1,53 @@
 import React from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import { Routes, Route, Outlet } from 'react-router-dom';
+import './BlogIndex.css';
 
-export default function Blog() {
-  return <div>I'm the blog page!</div>;
+import useCheckMobileScreen from './Hooks/useWindowDimensions';
+
+// Component imports
+import Sidebar from './Components/Sidebar/Sidebar';
+import MobileSidebar from './Components/MobileSidebar/MobileSidebar';
+import MobileNavbar from './Components/MobileNavbar/MobileNavbar';
+import Summaries from './Components/Summaries/Summaries';
+import Post from './Components/Post/Post';
+import NotFound from './Components/NotFound/NotFound';
+import Home from './Components/Home/Home';
+
+export default function BlogIndex() {
+  const [navOpen, setNavOpen] = useState(false);
+  const isMobile = useCheckMobileScreen();
+
+  // Toggles mobile side navbar open/closed
+  const toggleNav = () => {
+    setNavOpen(!navOpen);
+  };
+
+  return (
+    <div className="column-wrapper">
+      {isMobile ? (
+        <>
+          <MobileNavbar toggleNav={toggleNav} />
+          <MobileSidebar navOpen={navOpen} toggleNav={toggleNav} />
+        </>
+      ) : (
+        <Sidebar />
+      )}
+
+      <Outlet />
+
+      <Routes>
+        <Route path="/" element={<Home isMobile={isMobile} />} />
+        <Route path="/posts/all" element={<Summaries />} />
+        <Route path="/posts/:postId" element={<Post />} />
+      </Routes>
+
+      <Routes>
+        {/* <Route path="/blog" element={<Home isMobile={isMobile} />} /> */}
+        {/* <Route path="/blog/posts/all" element={<Summaries />} />
+        <Route path="/blog/posts/:postId" element={<Post />} /> */}
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
+    </div>
+  );
 }

@@ -1,0 +1,9 @@
+.summaries-main {
+  padding: 1em;
+}
+
+.summaries-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
