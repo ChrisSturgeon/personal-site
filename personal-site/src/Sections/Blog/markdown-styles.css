@@ -1,0 +1,71 @@
+.ReactMarkdown {
+}
+
+.ReactMarkdown p {
+  white-space: pre-wrap;
+}
+
+.ReactMarkdown pre {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.ReactMarkdown img {
+  max-width: 75%;
+  margin: 0 auto;
+  display: block;
+}
+
+.ReactMarkdown ul,
+.ReactMarkdown ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: rgb(199, 211, 199);
+}
+
+.ReactMarkdown ul {
+  list-style-type: disc;
+}
+
+.ReactMarkdown li {
+  font-family: 'Outfit', Helvetica, Arial, sans-serif;
+  background-color: pink;
+  list-style-position: inside;
+}
+
+.ReactMarkdown h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ReactMarkdown h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ReactMarkdown h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Outfit', Helvetica, Arial, sans-serif;
+}
+
+.ReactMarkdown h5 {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.ReactMarkdown hr {
+  border: 0;
+  height: 1px;
+  background: rgb(218, 218, 218);
+}
+
+.ReactMarkdown blockquote {
+  background-color: rgb(241, 241, 241);
+  border-left: 4px solid blue;
+}
+
+.ReactMarkdown a {
+  text-decoration: none;
+}

@@ -1,8 +1,10 @@
-import { format, parseISO } from 'date-fns';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { format, parseISO } from 'date-fns';
+import '../../markdown-styles.css';
 import './Post.css';
 import Comments from '../Comments/Comments';
+import PostMarkdown from '../PostMarkdown/PostMarkdown';
 
 export default function Post(props) {
   const { postId } = useParams();
@@ -35,7 +37,8 @@ export default function Post(props) {
         <div className="post-wrapper">
           <p className="posted-date">{formattedDate}</p>
           <h1>{post.title}</h1>
-          <p dangerouslySetInnerHTML={{ __html: post.content }}></p>
+          {/* <p dangerouslySetInnerHTML={{ __html: post.content }}></p> */}
+          <PostMarkdown content={post.content} />
         </div>
         <Comments />
       </main>

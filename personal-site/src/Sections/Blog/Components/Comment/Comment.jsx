@@ -1,9 +1,11 @@
 import React from 'react';
 import './Comment.css';
 import { format, parseISO } from 'date-fns';
+import DOMPurify from 'dompurify';
 
 export default function Comment({ comment }) {
   const formattedDate = format(parseISO(comment.posted), 'do MMM yyyy');
+
   return (
     <div className="comment">
       <span className="comment-details">
@@ -12,7 +14,11 @@ export default function Comment({ comment }) {
           {formattedDate}
         </span>
       </span>
-      <p dangerouslySetInnerHTML={{ __html: comment.content }}></p>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: DOMPurify.sanitize(comment.content),
+        }}
+      ></p>
     </div>
   );
 }

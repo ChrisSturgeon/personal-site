@@ -1,8 +1,39 @@
 .sidebar {
-  background-color: pink;
+  background-color: black;
   height: 100vh;
   box-sizing: border-box;
   padding: 1em;
   position: sticky;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 20px solid red;
+}
+
+.sidebar .logo {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.sidebar .upper ul {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+  font-size: 1.25em;
+}
+
+.sidebar .upper li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar .logo:hover,
+.sidebar .upper li a:hover {
+  color: yellow;
 }

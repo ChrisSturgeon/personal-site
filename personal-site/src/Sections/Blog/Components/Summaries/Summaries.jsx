@@ -20,7 +20,6 @@ export default function Summaries(props) {
 
   return (
     <div className="summaries-main">
-      <p>I'm the all posts page!</p>
       <div className="summaries-column">
         {posts
           ? posts.map((post) => {

@@ -1,4 +1,23 @@
-.post-card {
-  background-color: rgb(205, 152, 208);
+.post-summary {
+  box-sizing: border-box;
+  background-color: white;
   min-height: 100px;
+  width: clamp(200px, 100%, 70em);
+  border-radius: 2px;
+  border: 1px solid rgb(228, 228, 228);
+  padding: 2em;
+}
+
+.post-summary {
+  text-decoration: none;
+  color: black;
+}
+
+.post-summary h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.post-summary span {
+  color: grey;
 }

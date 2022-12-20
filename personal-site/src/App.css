@@ -163,9 +163,14 @@ table {
   font-style: normal;
 }
 
-h2 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
-  font-weight: 700;
 }
 
 h3,
@@ -180,4 +185,8 @@ p {
 
 li {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
 }
