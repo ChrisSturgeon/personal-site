@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './MobileSidebar.css';
 import { Link } from 'react-router-dom';
-import { format } from 'date-fns';
 
 export default function MobileSidebar({ navOpen, toggleNav }) {
   const [test, setTest] = useState(false);

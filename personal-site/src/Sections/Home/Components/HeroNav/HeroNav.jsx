@@ -13,7 +13,6 @@ export default function HeroNav({
       <button onClick={() => handleScroll(aboutRef)}>About</button>
       <button onClick={() => handleScroll(projectsRef)}>Projects</button>
       <Link to="/blog">Blog</Link>
-
       <button onClick={() => handleScroll(contactRef)}>Contact</button>
     </nav>
   );
