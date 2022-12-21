@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f0b308c.css",
-    "main.js": "/static/js/main.df5b9b9b.js",
+    "main.css": "/static/css/main.2dbf7adf.css",
+    "main.js": "/static/js/main.ec7a325e.js",
     "static/js/787.3ba5e41c.chunk.js": "/static/js/787.3ba5e41c.chunk.js",
     "static/media/WheresFry.png": "/static/media/WheresFry.3554a1bdebc0471373c0.png",
     "static/media/BattleShips.png": "/static/media/BattleShips.73fe836821cec029f297.png",
@@ -13,13 +13,14 @@
     "static/media/Outfit-ExtraBold.ttf": "/static/media/Outfit-ExtraBold.4def75c8bb160b4f3cb8.ttf",
     "static/media/Outfit-Bold.ttf": "/static/media/Outfit-Bold.958af3eb04f5d52fff1d.ttf",
     "static/media/Outfit-Medium.ttf": "/static/media/Outfit-Medium.1a96ec21fd3e057ba010.ttf",
+    "static/media/Outfit-Thin.ttf": "/static/media/Outfit-Thin.88a7fedd5d580d884e1e.ttf",
     "index.html": "/index.html",
-    "main.5f0b308c.css.map": "/static/css/main.5f0b308c.css.map",
-    "main.df5b9b9b.js.map": "/static/js/main.df5b9b9b.js.map",
+    "main.2dbf7adf.css.map": "/static/css/main.2dbf7adf.css.map",
+    "main.ec7a325e.js.map": "/static/js/main.ec7a325e.js.map",
     "787.3ba5e41c.chunk.js.map": "/static/js/787.3ba5e41c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f0b308c.css",
-    "static/js/main.df5b9b9b.js"
+    "static/css/main.2dbf7adf.css",
+    "static/js/main.ec7a325e.js"
   ]
 }
