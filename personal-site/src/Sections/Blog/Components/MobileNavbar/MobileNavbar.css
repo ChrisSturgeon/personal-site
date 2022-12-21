@@ -3,16 +3,33 @@
   justify-content: space-between;
   align-items: center;
   top: 0;
-  height: 2em;
+  height: 40px;
   width: 100vw;
   position: sticky;
   z-index: 99;
-  background-color: red;
+  background-color: black;
   padding: 3px 1em;
   box-sizing: border-box;
+  padding: 0 25px;
 }
 
 .test-div {
   width: 100%;
-  background-color: red;
+}
+
+.mobile-navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.mobile-navbar button {
+  background-color: transparent;
+  border: none;
+}
+
+.mobile-navbar button i {
+  color: white;
+  font-weight: 900;
+  font-size: 1.8rem;
 }

@@ -1,6 +1,39 @@
 import React, { useState, useEffect } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useParams } from 'react-router-dom';
 import './CommentForm.css';
+
+const expandOut = {
+  initial: {
+    height: 0,
+    opacity: 0,
+  },
+  animate: {
+    height: 'auto',
+    opacity: 1,
+    transition: {
+      height: {
+        duration: 0.2,
+      },
+      opacity: {
+        duration: 0.7,
+        delay: 0,
+      },
+    },
+  },
+  exit: {
+    height: 0,
+    opacity: 0,
+    transition: {
+      height: {
+        duration: 0.2,
+      },
+      opacity: {
+        duration: 0.1,
+      },
+    },
+  },
+};
 
 export default function CommentForm({ confirmSubmit }) {
   const [username, setUsername] = useState(null);
@@ -11,7 +44,7 @@ export default function CommentForm({ confirmSubmit }) {
 
   const [validationError, setValidationError] = useState(null);
   const { postId } = useParams();
-  const submitURL = `http://localhost:3000/posts/${postId}/comments/create`;
+  const submitURL = `https://blog-api-production-aaa7.up.railway.app/posts/${postId}/comments/create`;
 
   const updateUsername = (event) => {
     setUsername(event.target.value);
@@ -66,7 +99,13 @@ export default function CommentForm({ confirmSubmit }) {
   }, [commentText]);
 
   return (
-    <form onSubmit={handleSubmit} className="comment-form">
+    <motion.form
+      onSubmit={handleSubmit}
+      className="comment-form"
+      initial={expandOut.initial}
+      animate={expandOut.animate}
+      exit={expandOut.exit}
+    >
       <label htmlFor="username">
         Name <span>{usernameCount} / 19 characters</span>
       </label>
@@ -86,6 +125,6 @@ export default function CommentForm({ confirmSubmit }) {
       ></textarea>
       <span>{validationError}</span>
       <button type="submit">Submit Comment</button>
-    </form>
+    </motion.form>
   );
 }

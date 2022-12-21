@@ -27,7 +27,7 @@ export default function BlogIndex() {
     <div className="column-wrapper">
       {isMobile ? (
         <>
-          <MobileNavbar toggleNav={toggleNav} />
+          <MobileNavbar navOpen={navOpen} toggleNav={toggleNav} />
           <MobileSidebar navOpen={navOpen} toggleNav={toggleNav} />
         </>
       ) : (

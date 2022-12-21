@@ -14,7 +14,9 @@ export default function Sidebar(props) {
   return (
     <nav className="sidebar">
       <div className="upper">
-        <Link className="logo">Chris Sturgeon</Link>
+        <Link to="/blog/" className="logo">
+          Chris Sturgeon
+        </Link>
         <ul>
           <motion.li whileHover={hoverShift}>
             <Link>Recent Posts</Link>

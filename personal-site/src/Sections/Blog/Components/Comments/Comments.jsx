@@ -3,13 +3,14 @@ import { useParams } from 'react-router-dom';
 import Comment from '../Comment/Comment';
 import CommentForm from '../CommentForm/CommentForm';
 import './Comments.css';
+import { AnimatePresence } from 'framer-motion';
 
 export default function Comments(props) {
   const [displayCommentForm, setDisplayCommentForm] = useState(false);
   const [comments, setComments] = useState(null);
   const [submitMessage, setSubmitMessage] = useState(false);
   const { postId } = useParams();
-  const commentsURL = `http://localhost:3000/posts/${postId}/comments`;
+  const commentsURL = `https://blog-api-production-aaa7.up.railway.app/posts/${postId}/comments`;
 
   const toggleCommentForm = () => {
     setDisplayCommentForm(!displayCommentForm);
@@ -29,7 +30,7 @@ export default function Comments(props) {
       }
     };
     getComments();
-  }, [commentsURL]);
+  }, [commentsURL, confirmSubmit]);
 
   return (
     <div className="comments-wrapper">
@@ -40,10 +41,14 @@ export default function Comments(props) {
         </button>
       </div>
 
-      {displayCommentForm ? (
-        <CommentForm confirmSubmit={confirmSubmit} />
-      ) : null}
-      {submitMessage ? <div>Thanks for your comment!</div> : null}
+      <AnimatePresence mode="wait">
+        {displayCommentForm ? (
+          <CommentForm key="commentForm" confirmSubmit={confirmSubmit} />
+        ) : null}
+        {submitMessage ? (
+          <div className="thank-you">Thanks for your comment!</div>
+        ) : null}
+      </AnimatePresence>
 
       <div className="comments-column">
         {comments ? (

@@ -19,6 +19,7 @@ export default function ScrollButtons({
       </li>
       <li>
         <Link
+          className="blog-link"
           to="/blog/"
           onClick={() => {
             // TO DO - improve this dirty hack

@@ -1,7 +1,7 @@
 .mobile-sidebar {
-  background-color: orange;
+  background-color: black;
   position: fixed;
-  height: calc(100vh - 2em);
+  height: calc(100vh - 40px);
   bottom: 0;
   width: 250px;
   left: -250px;
@@ -10,8 +10,9 @@
   overflow-y: autod;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 1em;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 2em;
   box-sizing: border-box;
 }
 
@@ -19,9 +20,32 @@
   left: 0;
 }
 
-.mobile-sidebar ul {
+.mobile-sidebar .upper ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1em;
+  /* align-items: center; */
+  gap: 1.3em;
+  color: white;
+}
+
+.mobile-sidebar .upper a {
+  font-size: 1.8rem;
+}
+
+.mobile-sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-footer h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.mobile-footer ul {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
 }

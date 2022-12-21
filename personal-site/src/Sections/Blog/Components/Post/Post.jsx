@@ -8,7 +8,7 @@ import PostMarkdown from '../PostMarkdown/PostMarkdown';
 
 export default function Post(props) {
   const { postId } = useParams();
-  const postUrl = `http://localhost:3000/posts/${postId}`;
+  const postUrl = `https://blog-api-production-aaa7.up.railway.app/posts/${postId}`;
   const [post, setPost] = useState(null);
   const [formattedDate, setFormattedDate] = useState(null);
 

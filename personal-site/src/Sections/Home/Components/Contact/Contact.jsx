@@ -2,7 +2,7 @@ import './Contact.css';
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Shift link to right on hover
+// Framer obj to shift link to right on hover
 const hoverShift = {
   position: 'relative',
   x: '20px',

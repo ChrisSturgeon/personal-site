@@ -8,7 +8,9 @@ export default function Summaries(props) {
   // Fetches posts summary on mount
   useEffect(() => {
     const getPosts = async () => {
-      const allPosts = await fetch('http://localhost:3000/posts/all');
+      const allPosts = await fetch(
+        'https://blog-api-production-aaa7.up.railway.app/posts/all'
+      );
       const data = await allPosts.json();
       setPosts(data.posts);
     };
