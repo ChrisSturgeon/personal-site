@@ -7,21 +7,37 @@
   border-left: 40px solid red;
 }
 
-.hero-nav button {
+.hero-nav a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hero-nav button,
+.hero-nav a {
   position: relative;
   padding: 0.75em 1em;
   border: none;
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 1em 0.8em;
-  min-width: 250px;
   font-weight: 700;
 }
 
+.hero-nav button {
+  min-width: 250px;
+}
+
+.hero-nav a {
+  min-width: 188px;
+}
+
 .hero-nav button::after,
-.hero-nav button::before {
+.hero-nav button::before,
+.hero-nav a::after,
+.hero-nav a::before {
   content: '';
   display: block;
   position: absolute;
@@ -32,7 +48,8 @@
   border-radius: 2px;
 }
 
-.hero-nav button::after {
+.hero-nav button::after,
+.hero-nav a::after {
   bottom: 0;
   right: 0;
   border-top-color: transparent;
@@ -41,7 +58,8 @@
   border-right: 10px solid blue;
 }
 
-.hero-nav button::before {
+.hero-nav button::before,
+.hero-nav a:before {
   top: 0;
   left: 0;
   border-bottom-color: transparent;
@@ -51,7 +69,9 @@
 }
 
 .hero-nav button:hover:before,
-.hero-nav button:hover:after {
+.hero-nav button:hover:after,
+.hero-nav a:hover:before,
+.hero-nav a:hover:after {
   border-bottom: 10px solid red;
   border-right: 10px solid red;
   border-top: 10px solid red;

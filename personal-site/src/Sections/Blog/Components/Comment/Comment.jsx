@@ -10,7 +10,7 @@ export default function Comment({ comment }) {
     <div className="comment">
       <span className="comment-details">
         <span>
-          <span className="username">{comment.username}</span> posted on{' '}
+          <span className="username">{comment.username}</span> commented on{' '}
           {formattedDate}
         </span>
       </span>

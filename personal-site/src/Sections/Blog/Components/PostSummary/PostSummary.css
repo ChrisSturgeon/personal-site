@@ -8,6 +8,10 @@
   padding: 2em;
 }
 
+.post-summary:hover {
+  border: 1px solid rgb(189, 189, 189);
+}
+
 .post-summary {
   text-decoration: none;
   color: black;
@@ -16,8 +20,14 @@
 .post-summary h2 {
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 0.25em;
 }
 
 .post-summary span {
   color: grey;
+  font-size: 0.95rem;
+}
+
+.post-summary p {
+  margin-top: 0.25em;
 }

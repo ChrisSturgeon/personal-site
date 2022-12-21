@@ -2,7 +2,7 @@
   background-color: black;
   height: 100vh;
   box-sizing: border-box;
-  padding: 1em;
+  padding: 1.5em;
   position: sticky;
   top: 0;
   display: flex;
@@ -19,11 +19,15 @@
   font-weight: 700;
 }
 
+.sidebar .upper {
+  width: 100%;
+}
+
 .sidebar .upper ul {
   margin-top: 2em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   gap: 1.25em;
   font-size: 1.25em;
 }
@@ -36,4 +40,22 @@
 .sidebar .logo:hover,
 .sidebar .upper li a:hover {
   color: yellow;
+}
+
+.footer,
+.footer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.footer li {
+  font-size: 0.8rem;
+}
+
+.footer h3 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
 }

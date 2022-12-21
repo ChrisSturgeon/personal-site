@@ -1,8 +1,12 @@
 .comment {
   display: flex;
   flex-direction: column;
-  background-color: rgb(191, 207, 97);
+  background-color: white;
   padding: 1em;
+}
+
+.comment {
+  border-bottom: 1px solid rgb(213, 213, 213);
 }
 
 .comment-details {
@@ -10,4 +14,3 @@
   font-size: 0.9rem;
   font-weight: 300;
 }
-

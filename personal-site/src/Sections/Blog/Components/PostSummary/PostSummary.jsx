@@ -5,7 +5,6 @@ import { format, parseISO } from 'date-fns';
 
 export default function PostSummary({ summary }) {
   const postUrl = `/blog/posts/${summary._id}`;
-
   const formattedDate = format(parseISO(summary.posted), 'do MMMMMM yyyy');
 
   return (

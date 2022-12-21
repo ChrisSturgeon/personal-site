@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  background-color: rgb(199, 211, 199);
+  margin: 0.5em;
 }
 
 .ReactMarkdown ul {
@@ -30,7 +30,6 @@
 
 .ReactMarkdown li {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
-  background-color: pink;
   list-style-position: inside;
 }
 

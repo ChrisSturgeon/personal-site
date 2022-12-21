@@ -5,6 +5,7 @@
 .projects h2 {
   font-size: 3rem;
   text-decoration: underline 5px solid red;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {

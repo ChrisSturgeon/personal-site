@@ -34,9 +34,8 @@ export default function About({ aboutRef }) {
               <li>React</li>
               <li>CSS</li>
               <li>HTML</li>
-              <li>Python</li>
-              <li>Django</li>
               <li>Bootstrap</li>
+              <li>Express</li>
             </ul>
           </div>
           <div className="tools">
