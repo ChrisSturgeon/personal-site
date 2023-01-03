@@ -174,7 +174,7 @@ table {
   background-color: rgb(241, 241, 241);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   .column-wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 2em 1fr;

@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import PostSummary from '../PostSummary/PostSummary';
-import './Summaries.css';
+import './Recent.css';
 
-export default function Summaries(props) {
+export default function Recent(props) {
   const [posts, setPosts] = useState([]);
 
   // Fetches posts summary on mount
   useEffect(() => {
-    const getPosts = async () => {
+    const fetchRecentPosts = async () => {
       const allPosts = await fetch(
-        'https://blog-api-production-aaa7.up.railway.app/posts/all'
+        'https://blog-api-production-aaa7.up.railway.app/posts/recent'
       );
       const data = await allPosts.json();
       setPosts(data.posts);
     };
-    getPosts();
+    fetchRecentPosts();
   }, []);
 
 

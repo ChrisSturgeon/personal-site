@@ -19,7 +19,7 @@ export default function Sidebar(props) {
         </Link>
         <ul>
           <motion.li whileHover={hoverShift}>
-            <Link>Recent Posts</Link>
+            <Link to="/blog/posts/recent">Recent Posts</Link>
           </motion.li>
           <motion.li whileHover={hoverShift}>
             <Link to="/blog/posts/all">All Posts</Link>

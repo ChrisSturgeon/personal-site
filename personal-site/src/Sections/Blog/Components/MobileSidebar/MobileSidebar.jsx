@@ -11,7 +11,7 @@ export default function MobileSidebar({ navOpen, toggleNav }) {
       <div className="upper">
         <ul>
           <li>
-            <Link onClick={() => toggleNav()}>Recent Posts</Link>
+            <Link to="/blog/posts/recent"onClick={() => toggleNav()}>Recent Posts</Link>
           </li>
           <li>
             <Link to="/blog/posts/all" onClick={() => toggleNav()}>

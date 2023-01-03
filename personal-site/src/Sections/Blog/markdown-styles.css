@@ -1,13 +1,17 @@
-.ReactMarkdown {
+.ReactMarkdown a,
+.ReactMarkdown a:visited {
+  color: blue;
 }
 
 .ReactMarkdown p {
   white-space: pre-wrap;
+  margin-bottom: 1em;
 }
 
 .ReactMarkdown pre {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  font-size: 1.3rem;
 }
 
 .ReactMarkdown img {
@@ -16,17 +20,17 @@
   display: block;
 }
 
-.ReactMarkdown ul,
+/* .ReactMarkdown ul,
 .ReactMarkdown ol {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
   margin: 0.5em;
-}
+} */
 
-.ReactMarkdown ul {
+/* .ReactMarkdown ul {
   list-style-type: disc;
-}
+} */
 
 .ReactMarkdown li {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
@@ -34,13 +38,21 @@
 }
 
 .ReactMarkdown h2 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+  margin-top: 1em;
+}
+
+.ReactMarkdown h2:first-of-type {
+  margin-top: 0;
 }
 
 .ReactMarkdown h3 {
   font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 0.25em;
+  margin-top: 1em;
 }
 
 .ReactMarkdown h4 {
@@ -67,4 +79,24 @@
 
 .ReactMarkdown a {
   text-decoration: none;
+}
+
+.ReactMarkdown ol {
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+.ReactMarkdown li {
+  display: list-item;
+  margin-bottom: 1em;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.codeStyle {
+  border-radius: 3px;
 }

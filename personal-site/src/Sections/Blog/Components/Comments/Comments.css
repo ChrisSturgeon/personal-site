@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  width: clamp(200px, 100%, 70em);
+  width: clamp(200px, 100%, 50em);
   padding: 2em;
   background-color: white;
   margin-top: 2em;

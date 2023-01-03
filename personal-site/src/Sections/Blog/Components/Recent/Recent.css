@@ -1,0 +1,16 @@
+.summaries-main {
+  padding: 1em;
+}
+
+.summaries-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .summaries-main {
+    padding: 1em 0;
+  }
+}
