@@ -116,7 +116,7 @@ export default function CommentForm({ confirmSubmit }) {
         maxLength={19}
       />
       <label htmlFor="commentText">
-        Text<span>{commentCount} / 3000 characters</span>
+        Comment<span>{commentCount} / 3000 characters</span>
       </label>
       <textarea
         required={true}
