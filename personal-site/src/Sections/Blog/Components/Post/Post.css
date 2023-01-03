@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  padding: 1em 1em;
 }
 
 .post-wrapper {
   box-sizing: border-box;
-  width: clamp(200px, 100vw, 50em);
+  width: clamp(200px, 100%, 50em);
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,7 @@
   background-color: white;
   border-radius: 2px;
   border: 1px solid rgb(228, 228, 228);
+  box-sizing: border-box;
 }
 
 .post-wrapper h1 {
@@ -43,5 +44,6 @@ p {
 
   .post-wrapper {
     padding: 1em;
+    width: 100vw;
   }
 }
