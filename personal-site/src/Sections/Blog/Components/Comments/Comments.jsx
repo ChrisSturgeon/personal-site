@@ -21,6 +21,7 @@ export default function Comments(props) {
     setSubmitMessage(true);
   };
 
+  // Fetches blog post comments on mount
   useEffect(() => {
     const getComments = async () => {
       const comments = await fetch(commentsURL);
@@ -30,7 +31,7 @@ export default function Comments(props) {
       }
     };
     getComments();
-  }, [commentsURL, confirmSubmit]);
+  }, []);
 
   return (
     <div className="comments-wrapper">
