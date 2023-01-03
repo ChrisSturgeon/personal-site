@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2dbf7adf.css",
-    "main.js": "/static/js/main.7ac0dfd8.js",
+    "main.css": "/static/css/main.3d04080b.css",
+    "main.js": "/static/js/main.9f2cd77f.js",
     "static/js/787.3ba5e41c.chunk.js": "/static/js/787.3ba5e41c.chunk.js",
     "static/media/WheresFry.png": "/static/media/WheresFry.3554a1bdebc0471373c0.png",
     "static/media/BattleShips.png": "/static/media/BattleShips.73fe836821cec029f297.png",
@@ -15,12 +15,12 @@
     "static/media/Outfit-Medium.ttf": "/static/media/Outfit-Medium.1a96ec21fd3e057ba010.ttf",
     "static/media/Outfit-Thin.ttf": "/static/media/Outfit-Thin.88a7fedd5d580d884e1e.ttf",
     "index.html": "/index.html",
-    "main.2dbf7adf.css.map": "/static/css/main.2dbf7adf.css.map",
-    "main.7ac0dfd8.js.map": "/static/js/main.7ac0dfd8.js.map",
+    "main.3d04080b.css.map": "/static/css/main.3d04080b.css.map",
+    "main.9f2cd77f.js.map": "/static/js/main.9f2cd77f.js.map",
     "787.3ba5e41c.chunk.js.map": "/static/js/787.3ba5e41c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dbf7adf.css",
-    "static/js/main.7ac0dfd8.js"
+    "static/css/main.3d04080b.css",
+    "static/js/main.9f2cd77f.js"
   ]
 }
