@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc007b03.css",
+    "main.css": "/static/css/main.3e67104d.css",
     "main.js": "/static/js/main.acc2f97c.js",
     "static/js/787.3ba5e41c.chunk.js": "/static/js/787.3ba5e41c.chunk.js",
     "static/media/WheresFry.png": "/static/media/WheresFry.3554a1bdebc0471373c0.png",
@@ -15,12 +15,12 @@
     "static/media/Outfit-Medium.ttf": "/static/media/Outfit-Medium.1a96ec21fd3e057ba010.ttf",
     "static/media/Outfit-Thin.ttf": "/static/media/Outfit-Thin.88a7fedd5d580d884e1e.ttf",
     "index.html": "/index.html",
-    "main.fc007b03.css.map": "/static/css/main.fc007b03.css.map",
+    "main.3e67104d.css.map": "/static/css/main.3e67104d.css.map",
     "main.acc2f97c.js.map": "/static/js/main.acc2f97c.js.map",
     "787.3ba5e41c.chunk.js.map": "/static/js/787.3ba5e41c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc007b03.css",
+    "static/css/main.3e67104d.css",
     "static/js/main.acc2f97c.js"
   ]
 }
