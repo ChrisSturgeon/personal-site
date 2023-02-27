@@ -29,7 +29,8 @@
 
 .home-wrapper a,
 .home-wrapper a:visited {
-  color: black;
+  color: blue;
+  text-decoration: none;
 }
 
 .headShot {
