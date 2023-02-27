@@ -8,7 +8,7 @@ export default function ScrollButtons({
   contactRef,
 }) {
   return (
-    <ul>
+    <ul className="scroll-btns">
       <li>
         <button className="about-btn" onClick={() => handleScroll(aboutRef)}>
           About
@@ -19,7 +19,7 @@ export default function ScrollButtons({
       </li>
       <li>
         <Link
-          className="blog-link"
+          className="blog-link-navbar"
           to="/blog/"
           onClick={() => {
             // TO DO - improve this dirty hack

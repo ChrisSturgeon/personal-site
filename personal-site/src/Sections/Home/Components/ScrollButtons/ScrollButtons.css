@@ -1,10 +1,25 @@
+.scroll-btns {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
 .about-btn button {
   color: yellow;
 }
 
-.blog-link {
+.blog-link-navbar {
   color: white;
   font-weight: 900;
   text-decoration: none;
   font-size: 4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .blog-link-navbar {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
 }

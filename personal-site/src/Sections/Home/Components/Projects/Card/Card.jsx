@@ -41,7 +41,7 @@ export default function Card({ info }) {
             <motion.li
               whileHover={{
                 position: 'relative',
-                scale: 1.2,
+                scale: 1.1,
               }}
             >
               <motion.a href={info.live} target="_blank" rel="noreferrer">
@@ -51,7 +51,7 @@ export default function Card({ info }) {
             <motion.li
               whileHover={{
                 position: 'relative',
-                scale: 1.2,
+                scale: 1.1,
               }}
             >
               <motion.a
@@ -60,7 +60,7 @@ export default function Card({ info }) {
                 rel="noreferrer"
                 whileHover={{
                   position: 'relative',
-                  scale: 1.2,
+                  scale: 1.1,
                 }}
               >
                 View Code

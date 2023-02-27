@@ -1,9 +1,19 @@
+import SessionHub from './imgs/SessionHub.jpg';
 import RedoneIt from './imgs/RedoneitHomepage.png';
 import ReactRecords from './imgs/ReactRecords.png';
 import BattleShips from './imgs/BattleShips.png';
 import WheresFry from './imgs/WheresFry.png';
 
 export const projectData = [
+  {
+    name: 'Session Hub',
+    screenshot: SessionHub,
+    about:
+      'An SPA built with React consuming a REST API built with Express. The project aim was to create a social media site where users can create accounts, add friends, and post about their recent surfing, windsurfing, kitesurfing etc. sessions for other users to like and comment on. ',
+    live: 'https://chrissturgeon.github.io/session-hub-front-end/',
+    repo: 'https://github.com/ChrisSturgeon/session-hub-front-end',
+  },
+
   {
     name: 'RedoneIt',
     screenshot: RedoneIt,

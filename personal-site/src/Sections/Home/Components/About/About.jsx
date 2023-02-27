@@ -48,6 +48,8 @@ export default function About({ aboutRef }) {
               <li>Git</li>
               <li>Firebase</li>
               <li>Jest</li>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
             </ul>
           </div>
         </div>
