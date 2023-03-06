@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6664165.css",
-    "main.js": "/static/js/main.acc2f97c.js",
+    "main.css": "/static/css/main.039247a4.css",
+    "main.js": "/static/js/main.35e6395c.js",
     "static/js/787.3ba5e41c.chunk.js": "/static/js/787.3ba5e41c.chunk.js",
     "static/media/WheresFry.png": "/static/media/WheresFry.3554a1bdebc0471373c0.png",
     "static/media/BattleShips.png": "/static/media/BattleShips.73fe836821cec029f297.png",
     "static/media/ReactRecords.png": "/static/media/ReactRecords.3be635d6f20c263b78b3.png",
     "static/media/headshot-modified.png": "/static/media/headshot-modified.903fa0cf83e26a7dc3e9.png",
+    "static/media/SessionHub.jpg": "/static/media/SessionHub.622326b82cda5e588d69.jpg",
     "static/media/RedoneitHomepage.png": "/static/media/RedoneitHomepage.8b9914241638418ec6e3.png",
     "static/media/Outfit-SemiBold.ttf": "/static/media/Outfit-SemiBold.59efc76d343a6215384a.ttf",
     "static/media/Outfit-Regular.ttf": "/static/media/Outfit-Regular.5a00cf1a6ae3ea70fb96.ttf",
@@ -15,12 +16,12 @@
     "static/media/Outfit-Medium.ttf": "/static/media/Outfit-Medium.1a96ec21fd3e057ba010.ttf",
     "static/media/Outfit-Thin.ttf": "/static/media/Outfit-Thin.88a7fedd5d580d884e1e.ttf",
     "index.html": "/index.html",
-    "main.b6664165.css.map": "/static/css/main.b6664165.css.map",
-    "main.acc2f97c.js.map": "/static/js/main.acc2f97c.js.map",
+    "main.039247a4.css.map": "/static/css/main.039247a4.css.map",
+    "main.35e6395c.js.map": "/static/js/main.35e6395c.js.map",
     "787.3ba5e41c.chunk.js.map": "/static/js/787.3ba5e41c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6664165.css",
-    "static/js/main.acc2f97c.js"
+    "static/css/main.039247a4.css",
+    "static/js/main.35e6395c.js"
   ]
 }
