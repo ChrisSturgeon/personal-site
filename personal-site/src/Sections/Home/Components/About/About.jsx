@@ -15,12 +15,12 @@ export default function About({ aboutRef }) {
       <div className="right">
         <p className="bio">
           Hi! I'm Chris, a front end web developer based in the south east of
-          England. My journey to web development started upon discovering that
-          building some simple CRUD sites with Django scratched my creative
-          itch. I subsequently launched myself head-first into JavaScript and
-          then React. I enjoy learning new frameworks and tools, and am
-          currently exploring Express and Mongo DB to broaden my understanding
-          across the stack.
+          England. My journey to web development started when I discovered that
+          building some basic CRUD sites with Django scratched my creative itch.
+          I subsequently launched myself head-first into Vanilla JavaScript
+          before moving on to React and Express. I enjoy learning new frameworks
+          and tools, and am currently focusing on learning TypeScript along with
+          accessibility and testing best practices.
         </p>
         <p className="bio">
           Outside of web development I enjoy windsurfing, paddleboarding,
@@ -32,10 +32,10 @@ export default function About({ aboutRef }) {
             <ul className="skills">
               <li>JavaScript</li>
               <li>React</li>
+              <li>Express</li>
               <li>CSS</li>
               <li>HTML</li>
               <li>Bootstrap</li>
-              <li>Express</li>
             </ul>
           </div>
           <div className="tools">
@@ -43,7 +43,6 @@ export default function About({ aboutRef }) {
             <ul className="skills">
               <li>Webpack</li>
               <li>Framer</li>
-              <li>Heroku</li>
               <li>npm</li>
               <li>Git</li>
               <li>Firebase</li>

@@ -7,9 +7,11 @@ export default function Projects({ projectsRef }) {
   return (
     <div ref={projectsRef} className="projects">
       <h2>Projects</h2>
-      {projectData.map((project) => {
-        return <Card info={project} key={project.name} />;
-      })}
+      <div className="projects-wrapper">
+        {projectData.map((project) => {
+          return <Card info={project} key={project.name} />;
+        })}
+      </div>
     </div>
   );
 }

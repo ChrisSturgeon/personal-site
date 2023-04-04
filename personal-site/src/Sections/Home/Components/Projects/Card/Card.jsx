@@ -8,7 +8,7 @@ const cardVariants = {
     opacity: 0,
   },
   onscreen: {
-    y: 50,
+    y: 0,
     opacity: 1,
     transition: {
       type: 'spring',
@@ -27,47 +27,45 @@ export default function Card({ info }) {
       viewport={{ once: true }}
     >
       <h3>{info.name}</h3>
+      <img
+        src={info.screenshot}
+        alt={info.altText}
+        style={{ maxWidth: '100%', objectFit: 'cover' }}
+      ></img>
       <div className="content">
-        <div className="left">
-          <img
-            src={info.screenshot}
-            alt={info.altText}
-            style={{ maxWidth: '100%', objectFit: 'cover' }}
-          ></img>
-        </div>
-        <div className="right">
-          <p> {info.about}</p>
-          <div className="links">
-            <motion.li
-              whileHover={{
-                position: 'relative',
-                scale: 1.1,
-              }}
-            >
-              <motion.a href={info.live} target="_blank" rel="noreferrer">
-                View Live
-              </motion.a>
-            </motion.li>
-            <motion.li
-              whileHover={{
-                position: 'relative',
-                scale: 1.1,
-              }}
-            >
-              <motion.a
-                href={info.repo}
-                target="_blank"
-                rel="noreferrer"
-                whileHover={{
-                  position: 'relative',
-                  scale: 1.1,
-                }}
-              >
-                View Code
-              </motion.a>
-            </motion.li>
-          </div>
-        </div>
+        <p> {info.about}</p>
+        <p>Challenges overcome include:</p>
+        {info.challenges && (
+          <ul>
+            {info.challenges.map((challenge) => {
+              return <li>{challenge}</li>;
+            })}
+          </ul>
+        )}
+      </div>
+      <div className="links">
+        <motion.a
+          href={info.live}
+          target="_blank"
+          rel="noreferrer"
+          whileHover={{
+            position: 'relative',
+            scale: 1.1,
+          }}
+        >
+          View Live
+        </motion.a>
+        <motion.a
+          href={info.repo}
+          target="_blank"
+          rel="noreferrer"
+          whileHover={{
+            position: 'relative',
+            scale: 1.1,
+          }}
+        >
+          View Code
+        </motion.a>
       </div>
     </motion.div>
   );
